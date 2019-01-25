@@ -1,0 +1,31 @@
+
+<messages>
+<input>
+<gGetAdditionalServices_InputVariable>
+<part  name="InputParameters">
+<InputParameters>
+<PI_PROFILE_ID>10441</PI_PROFILE_ID>
+</InputParameters>
+</part>
+</gGetAdditionalServices_InputVariable>
+</input>
+<fault>
+<bpelFault>
+<faultType>0</faultType>
+<bindingFault>
+<part  name="summary">
+<summary>Exception occured when binding was invoked. Exception occured during invocation of JCA binding: "JCA Binding execute of Reference operation 'DB_GetAdditionalServices' failed due to: Stored procedure invocation error. Error while trying to prepare and execute the BYXW_CUSTOMER_PROFILE_BL.GET_ADDITIONAL_SERVICES API. An error occurred while preparing and executing the BYXW_CUSTOMER_PROFILE_BL.GET_ADDITIONAL_SERVICES API. Cause: java.sql.SQLSyntaxErrorException: ORA-00902: invalid datatype Check to ensure that the API is defined in the database and that the parameters match the signature of the API. This exception is considered not retriable, likely due to a modelling mistake. To classify it as retriable instead add property nonRetriableErrorCodes with value "-902" to your deployment descriptor (i.e. weblogic-ra.xml). To auto retry a retriable fault set these composite.xml properties for this invoke: jca.retry.interval, jca.retry.count, and jca.retry.backoff. All properties are integers. ". The invoked JCA adapter raised a resource exception. Please examine the above error message carefully to determine a resolution. </summary>
+</part>
+<part  name="detail">
+<detail>ORA-00902: invalid datatype </detail>
+</part>
+<part  name="code">
+<code>902</code>
+</part>
+</bindingFault>
+</bpelFault>
+</fault>
+<faultType>
+<message>0</message>
+</faultType>
+</messages>
